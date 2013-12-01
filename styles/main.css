@@ -81,9 +81,38 @@ header#header {
 .logo {
   margin: 0px 0px 0px 5px;
 }
+/*.donatebutton{
+  .right;
+  margin-top: -162px;
+}*/
 .donatebutton {
   float: right;
-  margin-top: -162px;
+  margin: -162px 0px 0px 0px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #777c1e;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #f7f7f7;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+.donatebutton:hover {
+  background-color: #fffaff;
+  color: black;
+}
+.donatebutton:active {
+  position: relative;
+  top: 1px;
 }
 /*//dropdown menu*/
 nav ul ul {
@@ -335,11 +364,23 @@ section#events-detail .map-detail p {
 }
 /*
 //about-page*/
-.about-one,
-a,
-p {
+.about-one {
+  padding-bottom: 20px;
+}
+.about-one p {
   margin: 8px 0px 0px 0px;
   color: black;
+}
+.about-one h4 {
+  color: black;
+  padding: 2px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.about-one h5 {
+  color: black;
+  padding: 2px;
 }
 /*header#intro {
   background-image: url('../images/background.jpg');
