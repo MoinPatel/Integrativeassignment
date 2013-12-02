@@ -51,6 +51,60 @@ h4 {
 .flowhidden {
   overflow: hidden;
 }
+.submitbutton {
+  float: right;
+  margin: 14px 20px 0px 0px;
+  background-color: #777c1e;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 30px;
+  line-height: 23px;
+  width: 110px;
+  text-decoration: none;
+  text-align: center;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.donatebutton {
+  float: right;
+  margin: -162px 0px 0px 0px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #777c1e;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #f7f7f7;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+.nodecoration {
+  text-decoration: none;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -250,12 +304,40 @@ aside#email-updates form .email {
   margin: 35px 0px 0px 23px;
 }
 aside#email-updates form .submit {
-  padding: 5px;
-  width: 130px;
-  margin: 15px 0px 0px 214px;
+  float: right;
+  margin: 14px 20px 0px 0px;
   background-color: #777c1e;
-  font-family: 'Asap', sans-serif, sans-serif, Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-  font-size: 1.70em;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 30px;
+  line-height: 23px;
+  width: 110px;
+  text-decoration: none;
+  text-align: center;
+}
+aside#email-updates form .submit:hover {
+  background-color: #0f0e0e;
+}
+aside#email-updates form .submit:active {
+  position: relative;
+  top: 1px;
 }
 footer {
   width: 100%;
@@ -382,6 +464,104 @@ section#events-detail .map-detail p {
   color: black;
   padding: 2px;
 }
+video {
+  width: 100%;
+  margin-top: 8px;
+  background-color: black;
+}
+.info {
+  color: black;
+}
+.history-1,
+.history-2 {
+  margin-top: 8px;
+  color: black;
+}
+.history-2 img {
+  margin-left: 100px;
+}
+/*
+get involved page*/
+.sub-menu ul {
+  background-color: black;
+  margin-top: 8px;
+}
+.sub-menu ul li {
+  margin-left: 10px;
+  border-right: 2px solid white;
+  /*border:5px solid red;*/
+
+}
+.sub-menu ul li:hover {
+  margin-left: 10px;
+  border-right: 2px solid white;
+  background-color: white;
+  opacity: 0.7;
+  /*border:5px solid red;*/
+
+}
+section .form {
+  background-color: #b39595;
+  color: white;
+  padding-top: 56px;
+}
+section .form form {
+  margin-left: 220px;
+}
+section .form form .formgroup {
+  background-color: yellow;
+}
+section .form form .formgroup label {
+  clear: both;
+  overflow: hidden;
+}
+section .form form .formgroup input .001 {
+  background-color: black;
+  margin-left: 25px;
+}
+/*//volunteeer page*/
+.volunteer,
+.registration {
+  margin-top: 8px;
+}
+.volunteer p,
+.registration p,
+.volunteer h4,
+.registration h4 {
+  color: black;
+}
+/*.002{
+          background-color: black;
+          margin-left: 25px;
+        }
+.003{
+          background-color: black;
+          margin-left: 25px;
+        }
+.004{
+          background-color: black;
+          margin-left: 25px;
+        }
+.005{
+          background-color: black;
+          margin-left: 25px;
+        }
+.006{
+          background-color: black;
+          margin-left: 25px;
+        }
+.007{
+          background-color: black;
+          margin-left: 25px;
+        }
+.008{
+          background-color: black;
+          margin-left: 25px;
+        }
+.008{
+          background-color: black;
+          margin-left: 25px;
+        }*/
 /*header#intro {
   background-image: url('../images/background.jpg');
   background-size: cover;

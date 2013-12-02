@@ -1,0 +1,128 @@
+/*a:link {
+        color: @yellow;
+        text-decoration: none;
+}
+a:hover {
+        color: darken(@yellow, 25%);
+        text-decoration: none;
+}
+a:visited {
+        color: @yellow;
+        text-decoration: none;
+}*/
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+/*h1, h2, h3, h4 {
+  font-family: @headingsfont;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5em;
+}
+*/
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 2.0em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.none {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+.flowhidden {
+  overflow: hidden;
+}
+.submitbutton {
+  float: right;
+  margin: 14px 20px 0px 0px;
+  background-color: #777c1e;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-bottom-left-radius: 8px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 30px;
+  line-height: 23px;
+  width: 110px;
+  text-decoration: none;
+  text-align: center;
+}
+/* This button was generated using CSSButtonGenerator.com */
+.donatebutton {
+  float: right;
+  margin: -162px 0px 0px 0px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #777c1e;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #f7f7f7;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+}
+.nodecoration {
+  text-decoration: none;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+nav#topnav {
+  display: none;
+}
+section#contact {
+  display: none;
+}
+section#gallery ul li {
+  float: left;
+  display: inline-block;
+  width: 45%;
+  margin: 0 2.475%;
+}
+footer#footer {
+  float: left;
+}

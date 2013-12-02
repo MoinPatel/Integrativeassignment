@@ -36,25 +36,7 @@ header#header{
   margin-top: -162px;
 }*/
 .donatebutton {
-  float: right;
-  margin: -162px 0px 0px 0px;
-  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-  background-color:#777c1e;
-  text-indent:0;
-  border:1px solid #dcdcdc;
-  display:inline-block;
-  color:#f7f7f7;
-  font-family:arial;
-  font-size:15px;
-  font-weight:bold;
-  font-style:normal;
-  height:50px;
-  line-height:50px;
-  width:200px;
-  text-decoration:none;
-  text-align:center;
+  .donatebutton
 }.donatebutton:hover {
   background-color:#fffaff;
   color: black;
@@ -99,7 +81,7 @@ nav ul ul {
     display: block;
     padding: 15px 20px;
     color: white; 
-    text-decoration: none;
+    .nodecoration;
     font-weight: bolder;
   }
     nav ul ul {
@@ -185,7 +167,7 @@ aside#events{
       .left;
       margin: 58px 0px 0px 5px;
       color: white;
-      text-decoration: none;
+      .nodecoration;
       font-family: @bodyfont;
       font-weight: bolder;
       font-size: 1.106em;
@@ -205,13 +187,14 @@ aside#email-updates{
      width: 323px;
      margin: 35px 0px 0px 23px;
     }
-    .submit{
-      padding: 5px;
-     width: 130px;
-     margin: 15px 0px 0px 214px;
-     background-color: #777c1e;
-     font-family:@bodyfont;
-     font-size: 1.70em;
+ 
+  .submit {
+      .submitbutton
+    }.submit:hover {
+      background-color:#0f0e0e;
+    }.submit:active {
+      position:relative;
+      top:1px;
     }
   }
 }
@@ -227,7 +210,7 @@ footer{
     .left;
     margin: 25px 0px 0px 10px;
     font-size: 0.70em;
-    text-decoration: none;
+    .nodecoration;
     padding-left: 5px;
     border-left: 1px solid #EEEBEB;
     ul, li, a{
@@ -305,7 +288,7 @@ aside#archive{
       background-color: #191617;
       a{
         color: white;
-        text-decoration: none;
+        .nodecoration;
       }
     }
   }
@@ -350,10 +333,104 @@ section#about{
         color: black;
         padding: 2px;
       }
-
-
-
   }
+  video { 
+   width:100%;
+   margin-top: 8px;
+   background-color: black;
+}
+.info {
+  color: black;
+}
+.history-1, .history-2{
+  margin-top: 8px;
+  color: black;
+}
+.history-2 img{
+  margin-left: 100px;
+}
+/*
+get involved page*/
+
+.sub-menu{
+  ul{
+    background-color: black;
+    margin-top: 8px;  
+
+    li{
+       margin-left: 10px;
+       border-right: 2px solid white;
+       /*border:5px solid red;*/
+    }li:hover{
+       margin-left: 10px;
+       border-right: 2px solid white;
+       background-color: white;
+       opacity: 0.7;
+       /*border:5px solid red;*/
+    }
+  }
+}
+
+section .form{
+  background-color: rgb(179, 149, 149);
+  color: white;
+  padding-top: 56px;
+  form{
+    margin-left: 220px;
+    .formgroup{
+      background-color: yellow;
+      label{
+        clear: both;
+        overflow: hidden;
+      }
+      input{
+          .001{
+          background-color: black;
+          margin-left: 25px;
+          }
+        }
+    }
+  }
+}
+/*//volunteeer page*/
+.volunteer, .registration{
+  margin-top: 8px;
+  p, h4{color: black;}
+}
+
+
+/*.002{
+          background-color: black;
+          margin-left: 25px;
+        }
+.003{
+          background-color: black;
+          margin-left: 25px;
+        }
+.004{
+          background-color: black;
+          margin-left: 25px;
+        }
+.005{
+          background-color: black;
+          margin-left: 25px;
+        }
+.006{
+          background-color: black;
+          margin-left: 25px;
+        }
+.007{
+          background-color: black;
+          margin-left: 25px;
+        }
+.008{
+          background-color: black;
+          margin-left: 25px;
+        }
+.008{
+          background-color: black;
+          margin-left: 25px;
+        }*/
 /*header#intro {
   background-image: url('../images/background.jpg');
   background-size: cover;
