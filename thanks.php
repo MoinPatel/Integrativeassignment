@@ -1,3 +1,4 @@
+        
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -57,13 +58,11 @@
             <a href="index.html"><img src="images/logos/logo.png"alt="Smiley face" height="150"></a>
           </div>
 
-          <a href="donate.html" class="donatebutton">DONATE</a>
+          <a href="#" class="donatebutton">DONATE</a>
         
       </header>
    <!-- Navigation -->
-        <div class="menubutton"><img src="images/001.svg"></div>
-       <nav>
-              <ul>
+       <nav><ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">about us</a>
@@ -76,60 +75,69 @@
                    </ul>
                 </li>
                 <li><a href="getinvolved.html">Get involved</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="donate.html">Contact us</a></li>
               </ul>
-        </nav>
-        
+          </nav>
    <!-- 
    
-    <!-- about page -->
-    <section id="about">
-        <div class="title">
-          <h2>About</h2>
+    
+        <!-- <div class="video"> -->
+        
+        <div class="sub-menu">
+         <ul>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="registertree.html">Register your tree</a>
+          </ul>
         </div>
+        <section class="form-info">
+                <h1>Thank You!</h1>
+                
+               <?php 
+                  $to="ptlm0441@humbermail.ca";
+                  $subject="Message from Contact Form";
+                  $message=$_POST["firstname"] . " " . $_POST["lastname"]. "sent a comment \r\n";
+                  // $message .=$_POST["comments"] . "\r\n" . "\r\n";
+                  $message .=$_POST["email"] . "\r\n";
+                  $message .=$_POST["firstname"] . " " . $_POST["lastname"]. "\r\n";
+                  $message .=$_POST["address"] . "\r\n";
+                  $message .=$_POST["city"] . "\r\n";
+                  $message .=$_POST["province"] . " " . $_POST["country"]. "\r\n";
+                  $message .=$_POST["postalcode"] . "\r\n";
+                  $message .=$_POST["phone"] . "\r\n";
+                 $from = $_POST["email"];   
+                mail($to,$subject,$from,$message);
+                
+                ?>
+                
+                <h2><?php echo $_POST["myList"]; ?></h2>
 
-        <div class="about-one">
 
-          <a href="#"><img src="images/about01.png" height="418" width="1168"></a>
-          
-          <p>Not Far From The Tree puts Toronto’s fruit to good use by picking and sharing the bounty.</p>
 
-          <p>When a homeowner can’t keep up with the abundant harvest produced by their tree, they let us know and we mobilize our volunteers to pick the bounty. The harvest is split three ways: 1/3 is offered to the tree owner, 1/3 is shared among the volunteers, and 1/3 is delivered by bicycle to be donated to food banks, shelters, and community kitchens in the neighbourhood so that we’re putting this existing source of fresh fruit to good use. It’s a win-win-win situation!</p>
+                <h2>Hi <?php echo $_POST["firstname"]; ?></h2>
+                <h2><?php echo $_POST["lastname"]; ?></h2>
 
-          <p>This simple act has profound impact. With an incredible crew of volunteers, we’re making good use of healthy food, addressing climate change with hands-on community action, and building community by sharing the urban abundance.</p>
-          
-          <h4>Founder</h4>
-          <h5>Laura Reinsborough<h5>
-                     
-          <h4>Interim Project Director</h4>
-          <h5>Danielle Goldfinger</h5>
-           
-          <h4>Community Engagement Specialist</h4>
-          <h5>Becky Thomas</h5>
-           
-          <h4>Picking Coordinator</h4>
-          <h5>Marc Michalak</h5>
-           
-          <h4>Events Coordinator</h4>
-          <h5>Kari Pederson</h5>
-           
-          <h4>Graphic Design</h4>
-          <h5>Eleven Ideas</h5>
-           
-          <h4>Steering Committee</h4>
-          <h5>Chris Chen, Chair</h5>
-          <h5>Jordy Gold</h5>
-          <h5>Jodi Lastman</h5>
-          <h5>Joshna Maharaj, Vice-Chair</h5>
-          <h5>Ben Marans</h5>
-          <h5>Ravenna Nuaimy-Barker</h5>
-           
-          <h4>Charitable Organization</h4>
-          <h5>Tides Canada Initiatives Society</h5>
-           
-          Original artwork for logo by Gregory Alan Elliott. -->
-        </div>
-     </section>
+
+
+                <h2>Your address is:</h2>
+                <h2><?php echo $_POST["email"]; ?></h2>
+                <h2><?php echo $_POST["address"]; ?></h2>
+                <h2><?php echo $_POST["city"]; ?></h2>
+                <h2><?php echo $_POST["country"]; ?></h2>
+                <h2><?php echo $_POST["postalcode"]; ?></h2>
+                <h2>Your phone number:</h2>
+                <h2><?php echo $_POST["phone"]; ?></h2>
+
+                
+
+                <h2></h2>
+        </section>
+
+
+         
+   
+        
+    
    
 
     <!-- footer -->

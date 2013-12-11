@@ -2,47 +2,50 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>Not Far From The Tree</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Not Far From The Tree</title>
+    <link rel="shortcut icon" href="images/favicon01.png"> 
+    <link rel="apple-itouch-icon" href="images/favicon01.png">
+      <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
+    <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Alegreya:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
 
-  <link rel="shortcut icon" href="images/favicon01.png"> 
-  <link rel="apple-itouch-icon" href="images/favicon01.png">
-
- 
-
-    <!-- Stylesheets -->
-  <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
-  <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Alegreya:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="styles/bjqs.css">
-  <!-- some pretty fonts for this demo page - not required for the slider -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
-
+    <link rel="stylesheet" href="styles/bjqs.css">
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
     <!-- load jQuery and the plugin -->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="js/bjqs-1.3.min.js"></script>
- 
-  <!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <![endif]-->
-    <script class="secret-source">
-            jQuery(document).ready(function($) {
+      <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+      <script src="js/bjqs-1.3.min.js"></script>
+      <meta name="viewport" content="initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+      <script class="secret-source">
+              jQuery(document).ready(function($) {
 
-              $('#banner-fade').bjqs({
-                animtype      : 'slide',
-                height      : 618,
-                width       : 1170,
-                responsive  : true
+                $('#banner-fade').bjqs({
+                  animtype      : 'slide',
+                  height      : 618,
+                  width       : 1170,
+                  responsive  : true
+                });
+
               });
 
+              $(document).ready(function() {
+              $(".menubutton").click(function(){
+                // function
+                $("nav").slideToggle();
+              });
+              
             });
-          </script>
-
+      </script>
 </head>
 <body>
     <!-- Header -->
@@ -58,24 +61,24 @@
         
       </header>
    <!-- Navigation -->
-       <nav>
-              
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">about us</a>
-                    <ul>
-                      <li><a href="about.html">Who we are</a></li>
-                      <li><a href="whatwedo.html">What we do</a></li>
-                      <li><a href="history.html">History</a></li>
-                      <li><a href="#">Awards</a></li>
-                      <li><a href="#">Annual Reports</a></li>
-                   </ul>
-                </li>
-                <li><a href="getinvolved.html">Get involved</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-        
+       <div class="menubutton"><img src="images/001.svg"></div>
+
+         <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">about us</a>
+                      <ul>
+                        <li><a href="about.html">Who we are</a></li>
+                        <li><a href="whatwedo.html">What we do</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="getinvolved.html">Get involved</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
         </nav>
         
    <!-- 
@@ -90,9 +93,9 @@
               <li><img src="images/slider-03.png" title="notfarfromthetree.org"></li>
             </ul>
             <!-- end Basic jQuery Slider -->
-              <div class="button">
-            <a href="#"><img src="images/button_01.png"alt="Smiley face" height="74"></a>
-            <a href="#"><img src="images/button_02.png"alt="Smiley face" height="74"></a>
+         <div class="button">
+            <a href="donate.html"><img src="images/button_01.png"alt="donate" height="74"></a>
+            <a href="getinvolved.html"><img src="images/button_02.png"alt="getinvolved" height="74"></a>
         </div>
           </div>
           <!-- End outer wrapper -->
@@ -113,22 +116,22 @@
 
         <div class="post">
             <a href="#"><img src="images/blog/blog-01.png"></a>
-            <h2>Nov 10 2013</h2>
+            <h2>Nov 25 2013</h2>
             <p>Not down with the hustle and bustle that comes along with the holiday season? With the crowded malls and folks just.</p>
             <a href="blog.html" class="more">Read more</a>
         </div>
 
         <div class="post">
             <a href="#"><img src="images/blog/blog-02.png"></a>
-            <h2>Nov 10 2013</h2>
-            <p>Not down with the hustle and bustle that comes along with the holiday season? With the crowded malls and folks just.</p>
+            <h2>Nov 22 2013</h2>
+            <p>People have been harvesting apples for millennia and enjoying apple cider for almost as long! Cider has a long history in parts of England (where it remains a popular treat) and</p>
             <a href="blog.html" class="more">Read more</a>
         </div>
 
         <div class="post">
             <a href="#"><img src="images/blog/blog-03.png"></a>
-            <h2>Nov 10 2013</h2>
-            <p>Not down with the hustle and bustle that comes along with the holiday season? With the crowded malls and folks just.</p>
+            <h2>Nov 20 2013</h2>
+            <p>You’re walking down the street and you just happen to walk by a beautiful tree with little ornamental balls of colourful fruit.</p>
             <a href="blog.html" class="more">Read more</a>
         </div>
 
@@ -150,8 +153,10 @@
                 <h2>Sign up  for E-mail updates</h2>
             </div>
            <form action="form.php">
-              <input type="text" name="fname" class="email">
+              <input type="text" name="fname" class="email" required>
+
               <input type="submit" value="Submit" class="submit">
+
            </form> 
       </aside>
 

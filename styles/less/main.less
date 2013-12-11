@@ -44,7 +44,11 @@ header#header{
   position:relative;
   top:1px;
 }
+
 /*//dropdown menu*/
+.menubutton {
+  display: none;
+}
 nav ul ul {
   .none;
 
@@ -68,7 +72,7 @@ nav ul ul {
   }
     nav ul li {
     .left
-}
+  }
   
     nav ul li:hover a {
       color: #777c1e;
@@ -135,7 +139,8 @@ section#latest-blog{
       p{
         width: 345px;
         .left;
-        margin: 0px 0px 0px 10px;
+        line-height: 26px;
+        margin: -15px 0px 0px 5px;
         /*font-family: 'Actor', sans-serif;*/
         font-weight: normal;
         font-family: @bodyfont;
@@ -202,14 +207,15 @@ footer{
   width: 100%;
   background-color:black;
   .flowhidden;
-  height: 226px;
+  /*font-size: 0.80em;*/
+ /* height: 226px;*/
   font-family: @bodyfont;
   .block{
     width:214px;
-    height: 180px;
+    min-height: 200px;
     .left;
     margin: 25px 0px 0px 10px;
-    font-size: 0.70em;
+    /*font-size: 0.70em;*/
     .nodecoration;
     padding-left: 5px;
     border-left: 1px solid #EEEBEB;
@@ -217,14 +223,13 @@ footer{
       text-decoration: none;
       padding-bottom: 5px;
       color: white;
+      font-size: 0.80em;
       h2{
-        font-size: 2.00em;
+       /* font-size: 0.80em;*/
       }
     }
   }
 }
-
-
 /*
 blog-page-detail*/
 section#detail-blog .title, aside#archive .title, section#events-detail .title, section#about .title{
@@ -240,7 +245,7 @@ section#detail-blog{
 }
 section .title{
   
- ;
+ 
 }
 section .detail-post{
   color: black;
@@ -289,6 +294,16 @@ aside#archive{
       a{
         color: white;
         .nodecoration;
+        
+
+      }
+      a:hover{
+        color: @yellow;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
       }
     }
   }
@@ -311,15 +326,19 @@ section#events-detail{
 /*
 //about-page*/
 section#about{
-  
+  width: 100%;
 
 }
  .about-one{
     
     padding-bottom: 20px;
+   img{
+    margin-top: 8px;
+   }
       p{
-    margin: 8px 0px 0px 0px;
-    color: black;}
+        margin: 8px 0px 0px 0px;
+        color: black;
+      }
 
       h4{
         color: black;
@@ -353,285 +372,725 @@ section#about{
 get involved page*/
 
 .sub-menu{
+   width: 100%;
+    height: 40px;
+    background-color: black;
+    padding-top: 3px;
+    margin-top: 8px;
   ul{
     background-color: black;
     margin-top: 8px;  
 
     li{
-       margin-left: 10px;
-       border-right: 2px solid white;
-       /*border:5px solid red;*/
+       height: 25px;
+        float: left;
+        padding-right: 10px;
+        margin-left: 12px;
+        border-right: 2px solid white;
+       a{
+        .nodecoration;
+         font-size: 1.40em;
+         color: white;
+         font-weight: normal;
+       } 
     }li:hover{
-       margin-left: 10px;
        border-right: 2px solid white;
-       background-color: white;
        opacity: 0.7;
-       /*border:5px solid red;*/
+      
+    }
+
+  }
+}
+
+
+
+section .form{
+  background-color: #2f292a;
+  color: white;
+  padding-top: 10px;
+  h2{
+   
+   color: black;
+   margin: 0px 0px 5px -25px;
+   font-family: @headingsfont;
+   font-size: 1em;
+   text-decoration: underline;
+  }
+  form{
+    margin-left: 220px;
+    .formgroup{
+      
+      label{
+       display: inline-block;
+       width:140px;
+      }
+      input{
+          padding: 5px;   
+         }
+      select{
+         padding: 5px;
+      }
     }
   }
 }
 
-section .form{
-  background-color: rgb(179, 149, 149);
-  color: white;
-  padding-top: 56px;
-  form{
-    margin-left: 220px;
-    .formgroup{
-      background-color: yellow;
-      label{
-        clear: both;
-        overflow: hidden;
-      }
-      input{
-          .001{
-          background-color: black;
-          margin-left: 25px;
-          }
-        }
-    }
-  }
+.btn{
+              padding: 10px;
+              margin: 16px 0px 35px 206px;
+              color: white;
+              width: 132px;
+              background-color: #777c1e;
+              border-radius: 10px;
+              }
+.radio{
+  margin-top: 20px;
+  margin-bottom: 17px;
+  margin-left: 22px;
 }
 /*//volunteeer page*/
 .volunteer, .registration{
   margin-top: 8px;
-  p, h4{color: black;}
+  p, h4, h2{color: black;}
 }
 
-
-/*.002{
-          background-color: black;
-          margin-left: 25px;
-        }
-.003{
-          background-color: black;
-          margin-left: 25px;
-        }
-.004{
-          background-color: black;
-          margin-left: 25px;
-        }
-.005{
-          background-color: black;
-          margin-left: 25px;
-        }
-.006{
-          background-color: black;
-          margin-left: 25px;
-        }
-.007{
-          background-color: black;
-          margin-left: 25px;
-        }
-.008{
-          background-color: black;
-          margin-left: 25px;
-        }
-.008{
-          background-color: black;
-          margin-left: 25px;
-        }*/
-/*header#intro {
-  background-image: url('../images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  .logo {
-    margin: 0 auto 50px;
-    width: 250px;
-    height: 187px;
-    background-image: url('../images/logos/remotecontrol.svg');
-  }
-  h1.headline {
-    margin: 0 auto 50px;
-    width: 50%;
-    font-size: 3.3em;
-    line-height: 1.3em;
-  }
+section .form{
+  h2{ color: black;}
+  h1{ color: black;}
+  
+}
+.form-info{
+  
+    color: black;
+ 
 }
 
-section#about {
-  background: @yellow;
-  color: @dark;
-  .content {
-    .widthfloat(45%);
-  }
-}
-
-section#gallery {
-  background: #fff;
-  color: @dark;
-  ul li {
-    .widthfloat(30%);
-    margin-bottom: 7%;
-  }
-}
-
-section#contact {
-  background: @dark;
-  form {
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-family: @headingsfont;
-    label {
-      .widthfloat(25%);
-      .labelappend {
-        display: inline-block;
-        padding: 7px;
-        width:25%;
-        background: @yellow;
-        color: #000;
-      }
-      input {
-        margin-left: -5px;
-        padding: 5px;
-        width: 70%;
-        border: 1px solid #fff;
-        background: @dark;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: @headingsfont;
-        -webkit-appearance: none;
-      }
-    }
-    input[type="submit"] {
-      .widthfloat(15%);
-      padding: 5px;
-      border: 0 none;
-      background: @yellow;
-      font-size: 1.2em;
-      font-family: @headingsfont;
-      cursor: pointer;
-    }
-  }
-}
-
-footer#footer {
-  background: @yellow;
-  color: @dark;
-}
-
-// Tablet Media Query
+/*
+// Tablet Media Query*/
 @media only screen and (max-width: 1024px) {
 
-  .container {
-    padding: 50px 0px;
-    width: 95%;
+ .container {
+      .relative;
+      .flowhidden;
+      width: 95%;
+      min-height: auto;
+    }
+  .logo{
+      img{
+        height: 155px;
+        width: 380px;
+      }
+  }
+  .donatebutton{
+      position: relative;
+      top: -5px;
+    }
+
+  /*//dropdown menu*/
+.menubutton {
+  display: none;
+}
+nav ul ul {
+  .none;
+
+
+}
+ nav ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    padding-left: 1px;
+  }
+  nav ul { 
+  list-style: none;
+  text-transform: uppercase;
+  /*padding-left: 182px;*/
+  .relative;
+  background-color: #000000;
+}
+  
+.button{
+    .left;
+    margin: -85px 0px 0px 208px;
+    .relative;
+    height: 79px;
+
   }
 
-  nav#topnav {
-    ul {
-      margin: 0 auto;
-      width: 100%;
-      li {
-        display: inline-block;
-        padding: 0px 5%;
+
+ section#latest-blog{
+  width: 100%;
+  margin-top: 8px;
+  .left;
+    .post{
+      margin-top: 14px;
+      font-family: @bodyfont;
+      .flowhidden;
+      a{
+        .left;
+        
+      }
+      h2{
+        .left;
+        margin: 0px 0px 14px 8px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 1.30em;
+        color: @blogtitle;
+        
+      }
+      p{
+        width: 500px;
+        .left;
+        margin: 0px 0px 0px 10px;
+        /*font-family: 'Actor', sans-serif;*/
+        font-weight: normal;
+        font-family: @bodyfont;
+        font-size: 1.40em;
+        color: @dark;
+        
+      }
+      .more{
+        margin:15px 0px 0px 10px;  
+        color: @dark;
+        font-size: 1.20em;
       }
     }
   }
-
-  header#intro {
-    h1.headline {
-      margin: 0 auto 50px;
-      width: 100%;
-      font-size: 2em;
-      line-height: 1.3em;
+  /*
+events*/
+  aside#events{
+    margin: 8px 0px 0px 0px;
+    width: 100%;
+    min-height: 300px;
+    
+      img{
+        margin: 60px 0px 0px 30px;
+      }
+      a{
+        margin: 90px 0px 0px 12px;
+        text-decoration: underline;
+      }
+  }
+   aside#email-updates{
+    .right;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    form{
+      .email{
+      padding: 10px;
+       width: 500px;
+      }
+   
+    .submit {
+        width: 140px;
+        height: 42px;
+        border-radius: 5px;
+        margin: 34px 279px 0px 0px;
+      }
     }
   }
+      footer{
 
-  section#about {
-    .content {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
-  section#gallery {
-    ul li {
-      width: 50%;
-      margin: 0 0 7% 0;
-    }
-  }
-
-  section#contact {
-    form {
-      label {
-        width: 100%;
-        margin: 0 0 2% 0;
-        text-align: center;
-        .labelappend {
-          width:25%;
-          padding: 11px;
+      .block{
+        width:175px;
+        height: 180px;
+        .left;
+        margin: 25px 0px 0px 10px;
+        font-size: 0.90em;
+        .nodecoration;
+        padding-left: 5px;
+        border-left: 1px solid #EEEBEB;
+        ul, li, a{
+          text-decoration: none;
+          padding-bottom: 5px;
+          color: white;
+          h2{
+            font-size: 1.70em;
+          }
         }
-        input {
-          margin-left: -5px;
-          padding: 10px;
-          width: 70%;
-          text-align: center;
-        }
-      }
-      input[type="submit"] {
-        width: 60%;
-        margin: 0;
-        float: none;
-        padding: 15px;
       }
     }
+    section#detail-blog{
+    width: 100%;
+    float: left;
+}
+section .title{
+  
+ 
+}
+section .detail-post{
+  color: black;
+
+}
+.detail-post img{
+    width: 100%;
   }
+.sc-network{
+  float: right;
+  padding-bottom: 20px;
+  
+  display: inline-block;
+  img{
+    height: 48px;
+  width: 48px;
+  }
+  
+}
+  aside#archive{
+     display: none;
+  }
+
+  section#events-detail{
+    iframe{
+      margin: 8px 0px 0px 0px;
+      border-radius: 12px;
+      width: 100%;
+    }
+    .map-detail h2{
+      color: black;
+    }
+    .map-detail p{
+      color: black;
+    }
+   }
+   .about-one{
+    
+    img{
+      width: 100%;
+      margin: 8px 0px 0px 0px;
+    }
+      p{
+    margin: 8px 0px 0px 0px;
+    color: black;}
+
+      h4{
+        color: black;
+        padding: 2px;
+        padding-top: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+        
+      }
+      h5{
+        color: black;
+        padding: 2px;
+      }
+  }
+  video { 
+   width:100%;
+   margin-top: 8px;
+   background-color: black;
+}
 
 }
 
-// Phone Media Query
+/*// Phone Media Query*/
 @media only screen and (max-width: 600px) and (min-width: 320px) {
 
-  h1, h2, h3, h4 {
-    margin-bottom: 0.8em;
+  .container {
+      .relative;
+      .flowhidden;
+      width: 320px;
+      min-height: auto;
+    }
+  header#header{
+  width: 100%;
+  background-color: #0c0b0b;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 8px;
+}
+  .logo{
+      img{
+        height: 80px;
+        width: 202px;
+      }
   }
+  .donatebutton{
+      display: none;
+    }
+/*//navigation*/
+nav{
+  display: none;
+}
+nav ul ul {
+  .none;
+  display: none;
 
-  h1 {
-    font-size: 2em;
+}
+ nav ul li:hover > ul {
+    display: block;
+    z-index: 1;
+    margin: -233px 0px 0px 140px;
   }
+  nav ul { 
+  list-style: none;
+  text-transform: uppercase;
+  .relative;
+  background-color: #000000;
+}
+  nav ul:after {
+    content: ""; 
+    clear: both;
+    display: block;
+    .relative;
 
-  h3 {
-    font-size: 1.2em;
   }
+    nav ul li {
+    .left;
+    width: 100%;
+    border-bottom: 1px solid white;
 
-  h4 {
-    font-size: 0.8em;
-  }
-
+}
   
+    nav ul li:hover a {
+      color: #777c1e;
+      .relative;
 
-  section#gallery {
-    ul li {
+
+    }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white; 
+    .nodecoration;
+    font-weight: bolder;
+  }
+    nav ul ul {
+      position: absolute; top: 100%;
+    }
+  nav ul ul li {
+    float: none; 
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    .relative;
+  }
+    nav ul ul li a {
+      color: #fff;
+    } 
+      nav ul ul li a:hover {
+        background: #4b545f;
+
+      }
+
+  /*//dropdown menu*/
+  .menubutton {
+    display: block;
+    float: right;
+    margin: -69px 40px 0px 0px;
+    background-color: #777c1e;
+  }
+
+  .button{
+    /*display: none;*/
+    .left;
+    margin: 10px 0px 0px 30px;
+    .relative;
+    height: auto;
+    img{
+      height: 35px;
+      width: 121px;
+    }
+  }
+ ul .bjqs img{
+
+  height: 500px;
+ }
+  /*//blog*/
+section#latest-blog .title, aside#events .title, aside#email-updates .title, 
+section#detail-blog .title, section#detail-blog .title, aside#archive .title, 
+section#events-detail .title, section#about .title{
+  background-color: black; 
+  padding: 14px 0px 10px 6px;
+  font-weight: normal;
+  font-size: 0.6em;
+}
+section#latest-blog{
+  
+  width: 100%;
+  margin-top: 8px;
+  .left;
+    .post{
+      margin-top: 14px;
+      font-family: @bodyfont;
+      .flowhidden;
+      a{
+        .left;
+        
+      }
+      h2{
+        .left;
+        margin:  0px 0px 0px 4px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 1.20em;
+        color: @blogtitle;
+        
+      }
+      p{
+        width: 98%;
+        .left;
+        margin: 0px 0px 0px 4px;
+        /*font-family: 'Actor', sans-serif;*/
+        font-weight: normal;
+        font-family: @bodyfont;
+        font-size: 1.10em;
+        color: @dark;
+        
+      }
+      .more{
+        margin:6px 0px 0px 3px; 
+        color: @dark;
+        font-size: 1.20em;
+      }
+    }
+  }
+
+      /*
+    events*/
+    aside#events{
+      .left;
       width: 100%;
-      margin: 0 0 7% 0;
+      min-height: 200px;
+      background-color: #2f292a;
+        img{
+          margin: 35px 0px 0px 15px;
+          height: 60px;
+          width: 60px;
+         }
+        a{
+          
+         margin: 55px 0px 0px 12px;
+          color: white;
+         ;
+
+        }
+    }
+    aside#email-updates{
+        .left;
+        width: 370px;
+        background-color: #2f292a;
+        margin: 8px 0px 0px 0px;
+        font-size: 0.80em;
+        min-height: 217px;
+  form{
+    .email{
+      padding: 10px;
+      width: 270px;
+     /*margin: 35px 0px 0px 23px;*/
+    }
+ 
+      .submit {
+          .submitbutton;
+          width: 270px;
+          float: left;
+          margin-left: 22px;
+          height: 40px;
+        }.submit:hover {
+          background-color:#0f0e0e;
+        }.submit:active {
+          position:relative;
+          top:1px;
+        }
+      }
+    }
+    footer{
+      width: 100%;
+      height: 140px;
+      background-color:black;
+      padding-bottom: 10px;
+      .flowhidden;
+      /*font-size: 0.80em;*/
+     /* height: 226px;*/
+      font-family: @bodyfont;
+      .block{
+         width: 88px;
+        height: 100px;
+        .left;
+        margin: 25px 0px 0px 10px;
+        /*font-size: 0.70em;*/
+        .nodecoration;
+        padding-left: 5px;
+        border-left: 1px solid #EEEBEB;
+      
+      }
+    }
+/* blog page*/
+      section#detail-blog {
+        width: 100%;
+        float: left;
+        h2{
+        font-weight: normal;
+          }
+        .detail-post{
+          width: 98%;
+            h2{
+            font-size: 1.60em;
+             margin-left: 5px;
+             margin-top: 2px;
+
+          }
+          h3{
+            font-size: 1.30em;
+             margin-left: 5px;
+             padding-bottom: 10px;
+
+          }
+          p{
+            margin-left: 5px;
+
+            }
+          
+          
+        }
+       }
+/*//about page*/
+section#about{
+  width: 100%;
+
+}
+ .about-one{
+    width: 98%;
+    padding-bottom: 20px;
+   img{
+    margin-top: 8px;
+    height: 250px;
+    max-width: 100%;
+   }
+      p{
+          margin: 8px 0px 0px 5px;
+          color: black;
+          width: 95%;
+        }
+
+      h4{
+        color: black;
+        padding: 2px;
+        padding-top: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-left: 5px;
+        
+      }
+      h5{
+        color: black;
+        padding: 2px;
+        margin-left: 5px;
+      }
+  }
+  video { 
+   width:100%;
+   max-height: 250px;
+   margin-top: -10px;
+   background-color: @dark;
+}
+.info {
+  margin-left: 6px;
+  width: 92%;
+  color: @dark;
+}
+.history-1, .history-2{
+  width: 92%;
+  margin-top: 8px;
+  color: black;
+  p{
+    margin-left: 10px;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+  }
+}
+.history-1 img{
+  height: 250px;
+  width: auto;
+}
+.history-2 img{
+  height: 250px;
+  width: 104%;
+  margin-left: 0px;
+}
+/*sub menu*/
+  .sub-menu{
+  
+      ul{
+        
+
+        li{     
+          padding-right: 4px;
+          margin-left: 6px;
+           a{
+            font-size: 1.10em;
+           }
+        }
+
+      }
+    }
+
+    section .form{
+      
+      h2{
+       
+       color: black;
+       margin: 0px 0px 5px -25px;
+       font-family: @headingsfont;
+       font-size: 1em;
+       text-decoration: underline;
+      }
+      form{
+        margin-left: 36px;
+        .formgroup{
+          
+          label{
+           display: inline-block;
+            width: 140px;
+            margin-top: 5px;
+          }
+          input{
+              padding: 5px;
+              width: 211px;
+              margin-top: 10px;  
+             }
+          select{
+            width: 200px;
+             padding: 5px;
+          }
+
+        }
+        h2{
+            margin-top: 10px;
+          }
+        p{
+          width: 300px;
+          margin-left: -24px;
+        }
+        .formgroup-radio{
+          input{
+            width: 100px;
+          }
+        }
+      }
+    }
+
+      .btn{      
+          margin-left: -5px;
+          border-radius: 7px;
+          width: 265px;
+          margin-top: 20px;
+          height: 43px;     
+        }
+    .radio{
+      margin-top: 20px;
+      margin-bottom: 17px;
+      margin-left: 22px;
+    }
+  .volunteer, .registration{
+    width: 98%;
+    img{
+      height:250px;
+      width: 100%;
+    }
+    p, h4{
+      width: 91%;
+      margin-left: 10px;
     }
   }
 
-  section#contact {
-    form {
-      label {
-        width: 100%;
-        margin: 0 0 7% 0;
-        .labelappend {
-          display: block;
-          width:100%;
-          padding: 10px;
-        }
-        input {
-          margin-left: 0px;
-          margin-top: -5px;
-          width: 100%;
-        }
-      }
-      input[type="submit"] {
-        width: 100%;
-        margin: 0;
-        float: none;
-        padding: 15px;
-      }
-    }
-  }
 
-}*/
+}
