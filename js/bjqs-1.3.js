@@ -28,8 +28,8 @@
 
             // transition valuess
             animtype        : 'fade',
-            animduration    : 450,      // length of transition
-            animspeed       : 6000,     // delay between transitions
+            animduration    : 850,      // length of transition
+            animspeed       : 8000,     // delay between transitions
             automatic       : true,     // enable/disable automatic slide rotation
 
             // control and marker configuration
